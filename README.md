@@ -4,6 +4,32 @@ This is my personal Hyprland configuration, based on [SolDoesTech's HyprV4](http
 
 I’ve removed unnecessary parts, simplified the structure, and fitted the setup to my needs.
 
+## 🧰 Install Guide
+
+After running your `archinstall` setup, follow these steps:
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/FrozenAssassine/Hyprland-Configurator
+    cd Hyprland-Configurator
+    ```
+
+2. Make the install script executable:
+
+    ```bash
+    chmod +x install.sh
+    ```
+
+3. Run the installer:
+
+    ```bash
+    ./install.sh
+    ```
+
+This will copy the necessary config files into your `.config` directory and set up Hyprland with your customized configuration.
+
+
 ## 🛠️ Getting Started
 
 To start editing and using the config:
