@@ -71,6 +71,7 @@ install_stage=(
     hyprpaper
     blender
     inkscape
+    ttf-fantasque-sans-mono
 )
 
 for str in ${myArray[@]}; do
