@@ -127,7 +127,7 @@ sleep 1
 read -rep $'[\e[1;33mACTION\e[0m] - Would you like to continue with the install (y,n) ' CONTINST
 if [[ $CONTINST == "Y" || $CONTINST == "y" ]]; then
     echo -e "$CNT - Setup starting..."
-    sudo touch /tmp/hyprv.tmp
+    sudo touch /tmp/hyprinstall.tmp
 else
     echo -e "$CNT - This script will now exit, no changes were made to your system."
     exit

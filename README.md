@@ -1,6 +1,6 @@
 # My Hyprland Config
 
-This is my personal Hyprland configuration, based on [SolDoesTech's HyprV4](https://github.com/SolDoesTech/HyprV4).
+This is my personal Hyprland configuration, based on [SolDoesTech's hypr4](https://github.com/SolDoesTech/hypr4).
 
 I’ve removed unnecessary parts, simplified the structure, and fitted the setup to my needs.
 
@@ -29,7 +29,6 @@ After running your `archinstall` setup, follow these steps:
 
 This will copy the necessary config files into your `.config` directory and set up Hyprland with your customized configuration.
 
-
 ## 🛠️ Getting Started
 
 To start editing and using the config:
@@ -57,6 +56,7 @@ For example, mine is set to:
 ```ini
 kb_layout = de
 ```
+
 Change it to whatever layout you use.
 
 ## 🖼️ Wallpaper

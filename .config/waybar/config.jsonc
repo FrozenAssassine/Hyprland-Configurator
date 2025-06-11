@@ -6,14 +6,8 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 20,
-    "modules-left": [
-        "custom/power_btn",
-        "custom/lock_screen",
-        "hyprland/workspaces"
-    ],
-    "modules-center": [
-        "clock"
-    ],
+    "modules-left": ["custom/power_btn", "custom/lock_screen", "hyprland/workspaces"],
+    "modules-center": ["clock"],
     "modules-right": [
         "tray",
         "cpu",
@@ -25,10 +19,8 @@
         "battery",
         "custom/updates"
     ],
-    
-    "include": [
-        "~/.config/waybar/conf/hyprv-util.jsonc"
-    ],
+
+    "include": ["~/.config/waybar/conf/hypr-util.jsonc"],
 
     "idle_inhibitor": {
         "format": "{icon}",
@@ -51,14 +43,18 @@
         "tooltip": false
     },
 
-"hyprland/workspaces": {
-  "disable-scroll": false,
-  "format": "{icon}",
-  "on-click": "hyprctl dispatch workspace {id}",
-  "format-icons": {
-    "1": "1", "2": "2", "3": "3", "4": "4", "5": "5"
-  }
-},
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "format": "{icon}",
+        "on-click": "hyprctl dispatch workspace {id}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5"
+        }
+    },
 
     "cpu": {
         "interval": 10,

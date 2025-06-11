@@ -1,5 +1,3 @@
-#!/bin/sh
-. ~/.config/HyprV/hyprv.conf
 
 #Check the version 
 VER=$(readlink -f ~/.config/waybar/config.jsonc | cut -d '-' -f1 | cut -d '/' -f8)
@@ -22,17 +20,11 @@ notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "switchi
 ln -sf ~/.config/waybar/style/$VER'-style'$SWITCHTO.css ~/.config/waybar/style.css
 
 #set the wofi theme
-ln -sf ~/.config/HyprV/wofi/style/$VER'-style'$SWITCHTO.css ~/.config/wofi/style.css
+ln -sf ~/.config/wofi/style/$VER'-style'$SWITCHTO.css ~/.config/wofi/style.css
 
 #set the mako theme
-ln -sf ~/.config/HyprV/mako/conf/config$SWITCHTO ~/.config/mako/config
+ln -sf ~/.config/mako/conf/config$SWITCHTO ~/.config/mako/config
 
-#set the measuring unit
-if [[ $SET_MESU == "I" ]]; then
-    ln -sf ~/.config/waybar/conf/mesu-imp.jsonc ~/.config/waybar/conf/mesu.jsonc
-elif [[ $SET_MESU == "M" ]]; then
-    ln -sf ~/.config/waybar/conf/mesu-met.jsonc ~/.config/waybar/conf/mesu.jsonc
-fi
 
 #set the xfce and GTK theme
 if [ $VER == "v4" ]; then
@@ -47,15 +39,8 @@ xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita$SWITCHTO"
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita$SWITCHTO"
 
 
-#change the background image and be cool about it ;)
-if [ -z $SET_BG ]; then
-    swww img ~/.config/HyprV/backgrounds/$VER'-background'$SWITCHTO.jpg --transition-fps 60 --transition-type wipe --transition-duration 2
-else
-    swww img $SET_BG --transition-fps 60 --transition-type wipe --transition-duration 2
-fi
-
 #update the sddm image
-cp -f ~/.config/HyprV/backgrounds/$VER'-background'$SWITCHTO.jpg /usr/share/sddm/themes/sdt/wallpaper.jpg
+cp -f ~/.config/hypr/backgrounds/$VER'-background'$SWITCHTO.jpg /usr/share/sddm/themes/sdt/wallpaper.jpg
 
 #reset mako
 sleep 1
