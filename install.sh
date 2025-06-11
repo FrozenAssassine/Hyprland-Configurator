@@ -36,6 +36,7 @@ install_stage=(
     waybar
     swww 
     swaylock-effects 
+    swayidle
     wlogout 
     xdg-desktop-portal-hyprland 
     swappy 
