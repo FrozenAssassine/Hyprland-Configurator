@@ -27,7 +27,7 @@ install_stage=(
     pamixer pavucontrol brightnessctl bluez bluez-utils blueman network-manager-applet
     gvfs thunar-archive-plugin file-roller papirus-icon-theme ttf-jetbrains-mono-nerd
     noto-fonts-emoji lxappearance xfce4-settings nwg-look sddm rofi rofi-emoji
-    tesseract discord visual-studio-code-bin hyprpaper blender inkscape ttf-fantasque-sans-mono
+    tesseract discord visual-studio-code-bin hyprpaper blender inkscape ttf-fantasque-sans-mono hyprpicker 
 )
 
 # ============================
